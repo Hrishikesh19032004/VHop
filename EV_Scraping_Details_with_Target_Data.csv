@@ -1,0 +1,13 @@
+Category,Term,Meaning in Data Scraping,Tools/Techniques to Handle,Example EV Domain Website,What to Scrape
+,,,,,
+Content Loading,AJAX/Fetch Requests,Data fetched via background API calls after page load.,Monitor and mimic network requests; use direct API calls.,https://ev-database.org,"EV specifications, comparisons, range data"
+Page Navigation,Infinite Scrolling,"New data loads as you scroll down, no traditional pagination.",Simulate scrolls with Selenium; monitor dynamic content loading.,https://insideevs.com/news/,News articles related to EVs
+Page Navigation,Pagination,Content is split across pages accessible via numbered or 'Next' links.,Loop through paginated URLs; identify and navigate pagination logic.,https://electrek.co/guides/ev/,EV-related guides and product reviews
+Anti-Bot Measures,CAPTCHA,Used to block bots by requiring human validation.,Avoid or use CAPTCHA solvers responsibly (if legal).,https://evgo.com,User registration/login data (not recommended)
+Anti-Bot Measures,Rate Limiting,Limits the number of requests in a given time frame.,"Implement delays, use rotating proxies/IPs.",https://chargepoint.com,"Station details, availability, user interactions (via API)"
+Anti-Bot Measures,Bot Detection,Detects bots based on behavior and blocks them.,"Simulate human-like browsing, rotate user agents.",https://plugshare.com,"Charger reviews, locations, user-contributed data"
+Ethical/Legal Constraints,Terms of Service (ToS),Legal rules that may restrict scraping; non-compliance could lead to issues.,Read and follow site’s terms; prefer APIs when available.,https://ev-database.org,EV specifications and stats (scrape cautiously)
+,,,,,
+,,,,,
+Technical Structure,JavaScript Rendering,JavaScript must be executed to render the actual content.,Use rendering tools like Puppeteer or Playwright.,https://www.volkswagen.de/de/modelle-und-konfigurator.html,"EV configuration options, model details"
+Alternative Solutions,Public APIs,Official structured APIs for accessing data.,"Access APIs with authentication keys, rate limits respected.",https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/,"Station data, fuel types, locations via API"
